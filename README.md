@@ -43,13 +43,16 @@ This repository contains audio profiles extracted from the official Realtek driv
 
 ```bash
 # Ubuntu/Debian
-sudo apt install easyeffects
+sudo add-apt-repository ppa:apandada1/easyeffects
+sudo apt update
+sudo apt install easyeffects lsp-plugins-lv2 calf-plugins zam-plugins rubberband-cli libzita-convolver-dev librnnoise-dev
 
 # Fedora
-sudo dnf install easyeffects
+sudo dnf install easyeffects lsp-plugins-lv2 calf zam-plugins lv2-mdala-plugins rubberband zita-convolver rnnoise
 
 # Arch Linux
-sudo pacman -S easyeffects
+sudo pacman -S easyeffects lsp-plugins-lv2 calf zam-plugins-lv2 rubberband zita-convolver rnnoise
+yay -S lv2-mdala-plugins
 ```
 
 ### Profile Installation
