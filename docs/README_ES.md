@@ -53,6 +53,9 @@ sudo dnf install easyeffects lsp-plugins-lv2 calf zam-plugins lv2-mdala-plugins 
 # Arch Linux
 sudo pacman -S easyeffects lsp-plugins-lv2 calf zam-plugins-lv2 rubberband zita-convolver rnnoise
 yay -S lv2-mdala-plugins
+
+# Flatpak (cualquier distribución)
+flatpak install flathub com.github.wwmm.easyeffects
 ```
 
 ### Instalación de Perfiles
@@ -64,10 +67,18 @@ cd thinkbook-13s-g4-easyeffects
 ```
 
 2. Copia los perfiles a la carpeta de configuración de EasyEffects:
-```bash
-mkdir -p ~/.config/easyeffects/output
-cp profiles/*.json ~/.config/easyeffects/output/
-```
+
+   **Instalación nativa:**
+   ```bash
+   mkdir -p ~/.config/easyeffects/output
+   cp profiles/*.json ~/.config/easyeffects/output/
+   ```
+
+   **Instalación Flatpak:**
+   ```bash
+   mkdir -p ~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output
+   cp profiles/*.json ~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output/
+   ```
 
 3. Abre EasyEffects y selecciona el perfil deseado desde la interfaz.
 
